@@ -1,0 +1,7 @@
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.AssemblyInfoInputs.cache
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.AssemblyInfo.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.csproj.CoreCompileInputs.cache
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.MvcApplicationPartsAssemblyInfo.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.MvcApplicationPartsAssemblyInfo.cache
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.RazorAssemblyInfo.cache
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.RazorAssemblyInfo.cs

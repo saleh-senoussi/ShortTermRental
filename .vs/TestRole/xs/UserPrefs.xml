@@ -1,0 +1,63 @@
+﻿<Properties StartupConfiguration="{AF9E7CC2-F49D-4900-9D90-A35376B638BB}|ShortTermRental">
+  <MonoDevelop.Ide.ItemProperties.ShortTermRental PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShortTermRental/Data/Pricing.cs">
+    <Files>
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/Controllers/MyPropertiesController.cs" Line="16" Column="1" />
+      <File FileName="ShortTermRental/Models/BookAccomodation.cs" Line="1" Column="1" />
+      <File FileName="ShortTermRental/Models/PropertyViewModel.cs" Line="26" Column="1" />
+      <File FileName="ShortTermRental/Data/Pricing.cs" Line="23" Column="49" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShortTermRental" expanded="True">
+            <Node name="ShortTermRental" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="Accomodations" expanded="True">
+                        <Node name="Controllers" expanded="True" />
+                        <Node name="NoPropertyFound.cshtml" expanded="True" />
+                        <Node name="ViewProperties.cshtml" expanded="True" />
+                      </Node>
+                      <Node name="Manage" expanded="True">
+                        <Node name="ChangePassword.cshtml" expanded="True" />
+                        <Node name="DownloadPersonalData.cshtml" expanded="True" />
+                        <Node name="Email.cshtml" expanded="True" />
+                        <Node name="ExternalLogins.cshtml" expanded="True" />
+                        <Node name="Index.cshtml" expanded="True" />
+                        <Node name="SetPassword.cshtml" expanded="True" />
+                      </Node>
+                      <Node name="Register.cshtml" expanded="True" />
+                      <Node name="RegisterConfirmation.cshtml" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Pricing.cs" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

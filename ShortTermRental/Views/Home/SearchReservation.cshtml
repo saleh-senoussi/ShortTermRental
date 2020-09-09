@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ShortTermRental.Models.PropertyViewModel>
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchReservation</title>
+</head>
+<body>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaximumGuests)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReviewAverage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Available)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bathrooms)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bedrooms)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Beds)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiscountedRate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Province)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaximumGuests)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReviewAverage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Available)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bathrooms)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bedrooms)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Beds)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiscountedRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Province)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "PropertyDetails", new { id=item.PropertyId }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
