@@ -311,17 +311,17 @@ namespace ShortTermRental.Migrations
                     b.Property<string>("HostId")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("CleaningFee")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("CleaningFee")
+                        .HasColumnType("REAL");
 
-                    b.Property<decimal>("DiscountedRate")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("DiscountedRate")
+                        .HasColumnType("REAL");
 
                     b.Property<double>("PercentDiscount")
                         .HasColumnType("REAL");
 
-                    b.Property<decimal>("RegularRate")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("RegularRate")
+                        .HasColumnType("REAL");
 
                     b.HasKey("PropertyId", "HostId");
 
@@ -334,6 +334,9 @@ namespace ShortTermRental.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Accuracy")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Address")
@@ -355,9 +358,18 @@ namespace ShortTermRental.Migrations
                     b.Property<int>("Beds")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("CheckIn")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Cleanliness")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Communication")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Country")
                         .IsRequired()
@@ -370,7 +382,13 @@ namespace ShortTermRental.Migrations
                     b.Property<string>("HostId")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Location")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("MaximumGuests")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Overall")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PostalCode")
@@ -384,9 +402,6 @@ namespace ShortTermRental.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("ReviewAverage")
-                        .HasColumnType("REAL");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -395,11 +410,27 @@ namespace ShortTermRental.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Value")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("ShortTermRental.Data.PropertyImage", b =>
+                {
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("PropertyId");
+
+                    b.ToTable("PropertyImages");
                 });
 
             modelBuilder.Entity("ShortTermRental.Data.Review", b =>
@@ -540,6 +571,15 @@ namespace ShortTermRental.Migrations
                     b.HasOne("ShortTermRental.Data.ApplicationUser", null)
                         .WithMany("properties")
                         .HasForeignKey("ApplicationUserId");
+                });
+
+            modelBuilder.Entity("ShortTermRental.Data.PropertyImage", b =>
+                {
+                    b.HasOne("ShortTermRental.Data.Property", "Property")
+                        .WithMany("Images")
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

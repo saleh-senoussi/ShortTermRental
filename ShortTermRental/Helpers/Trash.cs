@@ -318,7 +318,7 @@ namespace ShortTermRental.Helpers
             return this.City != "" && this.Province != "" && this.Guests != 0;
         }*/
     }
-}
+
 
 /*class DateGreaterThanCheckInAttribute : ValidationAttribute, IClientModelValidator
     {
@@ -374,42 +374,336 @@ namespace ShortTermRental.Helpers
         }*/
 
 
-/*public Property(int Id, string Type, string Title, int MaximumGuests, double ReviewAverage,
-            string RoomType, string Description, bool PrivateBathroom, bool PrivateSpace, int Bathrooms,
-            int Bedrooms, int Beds, string Address, string City, string PostalCode, string Province,
-            string Country, Guid HostId)
-        {
-            this.Id = Id;
-            this.Type = Type;
-            this.Title = Title;
-            this.MaximumGuests = MaximumGuests;
-            this.ReviewAverage = ReviewAverage;
-            this.Available = true;
-            this.RoomType = RoomType;
-            this.Description = Description;
-            this.PrivateBathroom = PrivateBathroom;
-            this.PrivateSpace = PrivateSpace;
-            this.Bathrooms = Bathrooms;
-            this.Bedrooms = Bedrooms;
-            this.Beds = Beds;
-            this.Address = Address;
-            this.City = City;
-            this.PostalCode = PostalCode;
-            this.Province = Province;
-            this.Country = Country;
-            this.HostId = HostId;
+        /*public Property(int Id, string Type, string Title, int MaximumGuests, double ReviewAverage,
+                    string RoomType, string Description, bool PrivateBathroom, bool PrivateSpace, int Bathrooms,
+                    int Bedrooms, int Beds, string Address, string City, string PostalCode, string Province,
+                    string Country, Guid HostId)
+                {
+                    this.Id = Id;
+                    this.Type = Type;
+                    this.Title = Title;
+                    this.MaximumGuests = MaximumGuests;
+                    this.ReviewAverage = ReviewAverage;
+                    this.Available = true;
+                    this.RoomType = RoomType;
+                    this.Description = Description;
+                    this.PrivateBathroom = PrivateBathroom;
+                    this.PrivateSpace = PrivateSpace;
+                    this.Bathrooms = Bathrooms;
+                    this.Bedrooms = Bedrooms;
+                    this.Beds = Beds;
+                    this.Address = Address;
+                    this.City = City;
+                    this.PostalCode = PostalCode;
+                    this.Province = Province;
+                    this.Country = Country;
+                    this.HostId = HostId;
+                }
+                */
+
+
+        //[DataType(DataType.Currency)]
+        //[Authorize(Roles ="Employee,Admin")]
+        //public double? Salary { get; set; }
+        //[Authorize(Roles = "Employee,Admin")]
+        //public string? Position { get; set; }
+        //[Authorize(Roles = "Admin")]
+        //public ICollection<IdentityRole> UserRoles { get; set; }
+        //[Authorize(Roles = "Employee,Admin,Customer")]
+        //public IEnumerable<Property> properties { get; set; }
+        //[Authorize(Roles = "Employee,Admin,Customer")]
+        //public IEnumerable<Booking> bookings { get; set; }
+
+        /*@model ShortTermRental.Areas.Identity.Accomodations.Models.PricingModel
+
+        @{
+            Layout = null;
         }
+
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>Create</title>
+        </head>
+        <body>
+
+            <h4>PricingModel</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="PricingModel.RegularRate" class="control-label"></label>
+                            <input asp-for="PricingModel.Type" class="form-control" />
+                            <span asp-validation-for="PricingModel.Type" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PricingModel.PercentDiscount" class="control-label"></label>
+                            <input asp-for="PricingModel.Title" class="form-control" />
+                            <span asp-validation-for="PricingModel.Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PricingModel.CleaningFee" class="control-label"></label>
+                            <input asp-for="PricingModel.MaximumGuests" class="form-control" />
+                            <span asp-validation-for="PricingModel.MaximumGuests" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+            @section Scripts {
+                @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+            }
+        </body>
+        </html>
         */
 
+        /*@model ShortTermRental.Areas.Identity.Accomodations.Models.PropertyModel
 
-//[DataType(DataType.Currency)]
-//[Authorize(Roles ="Employee,Admin")]
-//public double? Salary { get; set; }
-//[Authorize(Roles = "Employee,Admin")]
-//public string? Position { get; set; }
-//[Authorize(Roles = "Admin")]
-//public ICollection<IdentityRole> UserRoles { get; set; }
-//[Authorize(Roles = "Employee,Admin,Customer")]
-//public IEnumerable<Property> properties { get; set; }
-//[Authorize(Roles = "Employee,Admin,Customer")]
-//public IEnumerable<Booking> bookings { get; set; }
+        @{
+            Layout = null;
+        }
+
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>CreateProperty</title>
+        </head>
+        <body>
+
+            <h4>PropertyModel</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Type" class="control-label"></label>
+                            <input asp-for="PropertyModel.Type" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Type" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Title" class="control-label"></label>
+                            <input asp-for="PropertyModel.Title" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.MaximumGuests" class="control-label"></label>
+                            <input asp-for="PropertyModel.MaximumGuests" class="form-control" />
+                            <span asp-validation-for="PropertyModel.MaximumGuests" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="PropertyModel.Available" /> @Html.DisplayNameFor(model => model.Available)
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Description" class="control-label"></label>
+                            <input asp-for="PropertyModel.Description" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="PropertyModel.PrivateSpace" /> @Html.DisplayNameFor(model => model.PrivateSpace)
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Bathrooms" class="control-label"></label>
+                            <input asp-for="PropertyModel.Bathrooms" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Bathrooms" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Bedrooms" class="control-label"></label>
+                            <input asp-for="PropertyModel.Bedrooms" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Bedrooms" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Beds" class="control-label"></label>
+                            <input asp-for="PropertyModel.Beds" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Beds" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Address" class="control-label"></label>
+                            <input asp-for="PropertyModel.Address" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Address" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.City" class="control-label"></label>
+                            <input asp-for="PropertyModel.City" class="form-control" />
+                            <span asp-validation-for="PropertyModel.City" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.PostalCode" class="control-label"></label>
+                            <input asp-for="PropertyModel.PostalCode" class="form-control" />
+                            <span asp-validation-for="PropertyModel.PostalCode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Province" class="control-label"></label>
+                            <input asp-for="PropertyModel.Province" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Province" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyModel.Country" class="control-label"></label>
+                            <input asp-for="PropertyModel.Country" class="form-control" />
+                            <span asp-validation-for="PropertyModel.Country" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <a asp-action="CreatePricing">Continue with setting the pricing!</a>
+            </div>
+            @section Scripts {
+                @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+            }
+        </body>
+        </html>
+        */
+
+        /*
+         * @model IEnumerable<ShortTermRental.Areas.Identity.Accomodations.Models.MyPropertiesModel>
+
+        @{ ViewData["Title"] = "Create"; }
+        @{ Layout = "/Views/Shared/_Layout.cshtml"; ; }
+
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>Index</title>
+        </head>
+        <body>
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Type)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Title)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.MaximumGuests)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Available)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Description)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.PrivateSpace)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Bathrooms)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Bedrooms)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Beds)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Address)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.City)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.PostalCode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Province)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Country)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Properties.Overall)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.MaximumGuests)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Available)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.PrivateSpace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Bathrooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Bedrooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Beds)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Province)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties.Overall)
+            </td>
+            <td>*/
+        // @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        // @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        // @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        // </ td >
+        //</ tr >}
+       /* </ tbody >
+    </ table >
+</ body >
+</ html >
+*/
+
+    //
+
+}

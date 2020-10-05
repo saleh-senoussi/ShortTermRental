@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{AF9E7CC2-F49D-4900-9D90-A35376B638BB}|ShortTermRental">
   <MonoDevelop.Ide.ItemProperties.ShortTermRental PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShortTermRental/Data/Property.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/CreateProperty.cshtml.cs">
     <Files>
-      <File FileName="ShortTermRental/Models/PropertyViewModel.cs" Line="51" Column="43" />
-      <File FileName="ShortTermRental/Controllers/HomeController.cs" />
-      <File FileName="ShortTermRental/Data/Property.cs" Line="1" Column="1" />
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/Details.cshtml.cs" Line="86" Column="1" />
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/Details.cshtml" />
+      <File FileName="ShortTermRental/Models/PropertyModel.cs" />
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Manage/Email.cshtml" />
+      <File FileName="ShortTermRental/Data/Property.cs" />
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/Edit.cshtml" Line="16" Column="16" />
+      <File FileName="ShortTermRental/Areas/Identity/Pages/Account/Accomodations/CreateProperty.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,14 +17,27 @@
             <Node name="ShortTermRental" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Identity" expanded="True">
-                  <Node name="Accomodations" expanded="True" />
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="Accomodations" expanded="True">
+                        <Node name="CreateProperty.cshtml" expanded="True">
+                          <Node name="CreateProperty.cshtml.cs" selected="True" />
+                        </Node>
+                        <Node name="Details.cshtml" expanded="True" />
+                        <Node name="Edit.cshtml" expanded="True" />
+                      </Node>
+                      <Node name="Manage" expanded="True" />
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="Property.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Helpers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

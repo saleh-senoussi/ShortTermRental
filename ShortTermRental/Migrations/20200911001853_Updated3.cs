@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ShortTermRental.Migrations
 {
-    public partial class Updated : Migration
+    public partial class Updated3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -172,7 +172,6 @@ namespace ShortTermRental.Migrations
                     Type = table.Column<string>(nullable: false),
                     Title = table.Column<string>(nullable: false),
                     MaximumGuests = table.Column<int>(nullable: false),
-                    ReviewAverage = table.Column<double>(nullable: false),
                     Available = table.Column<bool>(nullable: false),
                     Description = table.Column<string>(nullable: false),
                     PrivateSpace = table.Column<bool>(nullable: false),
@@ -185,6 +184,13 @@ namespace ShortTermRental.Migrations
                     Province = table.Column<string>(nullable: false),
                     Country = table.Column<string>(nullable: false),
                     HostId = table.Column<string>(nullable: true),
+                    Cleanliness = table.Column<int>(nullable: false),
+                    Accuracy = table.Column<int>(nullable: false),
+                    CheckIn = table.Column<int>(nullable: false),
+                    Communication = table.Column<int>(nullable: false),
+                    Location = table.Column<int>(nullable: false),
+                    Value = table.Column<int>(nullable: false),
+                    Overall = table.Column<int>(nullable: false),
                     ApplicationUserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -278,10 +284,10 @@ namespace ShortTermRental.Migrations
                 {
                     PropertyId = table.Column<int>(nullable: false),
                     HostId = table.Column<string>(nullable: false),
-                    RegularRate = table.Column<decimal>(nullable: false),
+                    RegularRate = table.Column<double>(nullable: false),
                     PercentDiscount = table.Column<double>(nullable: false),
-                    DiscountedRate = table.Column<decimal>(nullable: false),
-                    CleaningFee = table.Column<decimal>(nullable: false)
+                    DiscountedRate = table.Column<double>(nullable: false),
+                    CleaningFee = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -294,6 +300,24 @@ namespace ShortTermRental.Migrations
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Pricings_Properties_PropertyId",
+                        column: x => x.PropertyId,
+                        principalTable: "Properties",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PropertyImages",
+                columns: table => new
+                {
+                    PropertyId = table.Column<int>(nullable: false),
+                    Image = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PropertyImages", x => x.PropertyId);
+                    table.ForeignKey(
+                        name: "FK_PropertyImages_Properties_PropertyId",
                         column: x => x.PropertyId,
                         principalTable: "Properties",
                         principalColumn: "Id",
@@ -388,6 +412,9 @@ namespace ShortTermRental.Migrations
 
             migrationBuilder.DropTable(
                 name: "Pricings");
+
+            migrationBuilder.DropTable(
+                name: "PropertyImages");
 
             migrationBuilder.DropTable(
                 name: "Reviews");

@@ -170,6 +170,11 @@
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.TagHelpers.output.cache
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.RazorCoreGenerate.cache
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/AccessDenied.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/CreatePricing.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/Delete.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/Details.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/Edit.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/IndexPr.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/ExternalLogin.cshtml.g.cs
@@ -208,6 +213,7 @@
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Pages/_ValidationScriptsPartial.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Views/Home/NoBookingFound.cshtml.g.cs
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
@@ -229,4 +235,4 @@
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.pdb
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.genruntimeconfig.cache
 /Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/ShortTermRental.csprojAssemblyReference.cache
-/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Pages/_ValidationScriptsPartial.cshtml.g.cs
+/Users/salehbicharasenoussi/Projects/ShortTermRental/ShortTermRental/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/Account/Accomodations/CreateProperty.cshtml.g.cs

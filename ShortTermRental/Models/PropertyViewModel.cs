@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
+using System.ComponentModel.DataAnnotations.Schema;
+using ShortTermRental.Data;
 
 namespace ShortTermRental.Models
 {
@@ -28,8 +30,7 @@ namespace ShortTermRental.Models
         public string PostalCode { get; set; }
         public string Province { get; set; }
         public string Country { get; set; }
-        public ICollection<string> Images { get; set; }
-
+        
         [DataType(DataType.Currency)]
         //[field: AssemblyVersionAttribute("4.3.2.1")]
         //[field: AssemblyCultureAttribute("ca")]
@@ -47,7 +48,10 @@ namespace ShortTermRental.Models
         public int Location { get; set; }
         public int Value { get; set; }
         public int Overall { get; set; }
-
+        
         public string HostName { get; set; }
+
+        public IEnumerable<PropertyImage> Images { get; set; }
+        public IEnumerable<Review> Reviews { get; set; }
     }
 }

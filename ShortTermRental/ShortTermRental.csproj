@@ -23,8 +23,9 @@
     <Folder Include="Helpers\" />
     <Folder Include="Areas\Identity\Accomodations\" />
     <Folder Include="Areas\Identity\Accomodations\Controllers\" />
-    <Folder Include="Areas\Identity\Accomodations\Models\" />
     <Folder Include="Areas\Identity\Accomodations\Views\" />
+    <Folder Include="Areas\Identity\Pages\Account\Accomodations\" />
+    <Folder Include="Areas\Identity\Pages\Account\Bookings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Areas\Identity\Pages\Account\Accomodations\Views\Delete.cshtml" />

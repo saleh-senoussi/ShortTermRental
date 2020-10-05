@@ -1,0 +1,44 @@
+﻿@page
+@model ShortTermRental.Areas.Identity.Pages.Account.Accomodations.CreatePricingModel
+
+@{
+    ViewData["Title"] = "Create Pricing";
+}
+
+<h1>Create</h1>
+
+<h4>PricingModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Pricing.RegularRate" class="control-label"></label>
+                <input asp-for="Pricing.RegularRate" class="form-control" />
+                <span asp-validation-for="Pricing.RegularRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pricing.PercentDiscount" class="control-label"></label>
+                <input asp-for="Pricing.PercentDiscount" class="form-control" />
+                <span asp-validation-for="Pricing.PercentDiscount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pricing.CleaningFee" class="control-label"></label>
+                <input asp-for="Pricing.CleaningFee" class="form-control" />
+                <span asp-validation-for="Pricing.CleaningFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

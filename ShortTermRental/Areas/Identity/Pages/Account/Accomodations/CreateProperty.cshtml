@@ -1,0 +1,127 @@
+@page
+@model ShortTermRental.Areas.Identity.Pages.Account.Accomodations.CreatePropertyModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Property</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Property.Type" class="control-label"></label>
+                <input asp-for="Property.Type" class="form-control" />
+                <span asp-validation-for="Property.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Title" class="control-label"></label>
+                <input asp-for="Property.Title" class="form-control" />
+                <span asp-validation-for="Property.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.MaximumGuests" class="control-label"></label>
+                <input asp-for="Property.MaximumGuests" class="form-control" />
+                <span asp-validation-for="Property.MaximumGuests" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Property.Available" /> @Html.DisplayNameFor(model => model.Property.Available)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Description" class="control-label"></label>
+                <input asp-for="Property.Description" class="form-control" />
+                <span asp-validation-for="Property.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Property.PrivateSpace" /> @Html.DisplayNameFor(model => model.Property.PrivateSpace)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Bathrooms" class="control-label"></label>
+                <input asp-for="Property.Bathrooms" class="form-control" />
+                <span asp-validation-for="Property.Bathrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Bedrooms" class="control-label"></label>
+                <input asp-for="Property.Bedrooms" class="form-control" />
+                <span asp-validation-for="Property.Bedrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Beds" class="control-label"></label>
+                <input asp-for="Property.Beds" class="form-control" />
+                <span asp-validation-for="Property.Beds" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Address" class="control-label"></label>
+                <input asp-for="Property.Address" class="form-control" />
+                <span asp-validation-for="Property.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.City" class="control-label"></label>
+                <input asp-for="Property.City" class="form-control" />
+                <span asp-validation-for="Property.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PostalCode" class="control-label"></label>
+                <input asp-for="Property.PostalCode" class="form-control" />
+                <span asp-validation-for="Property.PostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Province" class="control-label"></label>
+                <input asp-for="Property.Province" class="form-control" />
+                <span asp-validation-for="Property.Province" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Country" class="control-label"></label>
+                <input asp-for="Property.Country" class="form-control" />
+                <span asp-validation-for="Property.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Cleanliness" class="control-label"></label>
+                <input asp-for="Property.Cleanliness" class="form-control" disabled/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Accuracy" class="control-label"></label>
+                <input asp-for="Property.Accuracy" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.CheckIn" class="control-label"></label>
+                <input asp-for="Property.CheckIn" class="form-control" disabled/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Communication" class="control-label"></label>
+                <input asp-for="Property.Communication" class="form-control" disabled/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Location" class="control-label"></label>
+                <input asp-for="Property.Location" class="form-control" disabled/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Value" class="control-label"></label>
+                <input asp-for="Property.Value" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Overall" class="control-label"></label>
+                <input asp-for="Property.Overall" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./CreatePricing" asp-route-id="Property.Id">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

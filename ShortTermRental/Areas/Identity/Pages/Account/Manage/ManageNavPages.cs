@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+//using ShortTermRental.Areas.Identity.Accomodations.Models;
 
 namespace ShortTermRental.Areas.Identity.Pages.Account.Manage
 {
@@ -13,6 +15,8 @@ namespace ShortTermRental.Areas.Identity.Pages.Account.Manage
         public static string Email => "Email";
 
         public static string ChangePassword => "ChangePassword";
+
+        public static string MyPropertiesList => "MyPropertiesList";
 
         public static string DownloadPersonalData => "DownloadPersonalData";
 
@@ -27,6 +31,8 @@ namespace ShortTermRental.Areas.Identity.Pages.Account.Manage
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
 
         public static string EmailNavClass(ViewContext viewContext) => PageNavClass(viewContext, Email);
+
+        public static string MyPropertiesListNavClass(ViewContext viewContext) => PageNavClass(viewContext, MyPropertiesList);
 
         public static string ChangePasswordNavClass(ViewContext viewContext) => PageNavClass(viewContext, ChangePassword);
 

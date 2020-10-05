@@ -22,6 +22,7 @@ namespace ShortTermRental.Data
         public DbSet<Pricing> Pricings { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<PropertyImage> PropertyImages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -47,6 +48,9 @@ namespace ShortTermRental.Data
 
             modelBuilder.Entity<Review>()
             .HasKey(t => new { t.PropertyId, t.GuestId, t.BookingId });
+
+            modelBuilder.Entity<PropertyImage>()
+            .HasKey(t => new { t.PropertyId });
             /*
             modelBuilder.Entity<Property>().HasData(
                 new Property

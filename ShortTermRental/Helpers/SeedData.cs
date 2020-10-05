@@ -154,7 +154,7 @@ namespace ShortTermRental.Helpers
                         Type = "Entire Appartment",
                         Title = "Short Term Rental " + i + "!",
                         MaximumGuests = i,
-                        ReviewAverage = 0,
+                        Overall = 0,
                         Available = true,
                         Description = "Short Term Accomodation # " + i,
                         PrivateSpace = true,

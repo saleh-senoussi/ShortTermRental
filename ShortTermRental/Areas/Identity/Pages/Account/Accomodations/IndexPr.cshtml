@@ -1,0 +1,162 @@
+@page
+@model ShortTermRental.Areas.Identity.Pages.Account.Accomodations.IndexPrModel
+
+@{
+    ViewData["Title"] = "IndexPr";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].MaximumGuests)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Available)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].PrivateSpace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Bathrooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Bedrooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Beds)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].PostalCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Province)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].HostId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Cleanliness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Accuracy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].CheckIn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Communication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Value)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Property[0].Overall)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Property) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumGuests)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Available)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrivateSpace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bathrooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bedrooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Beds)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Province)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HostId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cleanliness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Accuracy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckIn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Communication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Value)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Overall)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
